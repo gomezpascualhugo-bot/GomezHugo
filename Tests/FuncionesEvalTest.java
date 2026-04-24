@@ -21,7 +21,8 @@ class FuncionesEvalTest {
 
     @org.junit.jupiter.api.Test
     void invertirArray() {
-        assertThrows(ArithmeticException.class,() -> FuncionesEval.esPerfecto(-3));
+        assertThrows(IllegalArgumentException.class,() -> FuncionesEval.invertirArray(null));
+        assertArrayEquals(new int[]{1,2},FuncionesEval.invertirArray(new int[] {2,1}));
 
     }
 
