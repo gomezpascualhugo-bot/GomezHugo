@@ -8,11 +8,15 @@ class FuncionesEvalTest {
     void esPerfecto() {
         assertThrows(ArithmeticException.class,() -> FuncionesEval.esPerfecto(-3));
         assertTrue(FuncionesEval.esPerfecto(6));
-        assertFalse(FuncionesEval.esPerfecto(1));
+        assertFalse(FuncionesEval.esPerfecto(13));
     }
 
     @org.junit.jupiter.api.Test
     void getTipoClima() {
+        assertEquals("FRIO", FuncionesEval.getTipoClima(10));
+        assertEquals("NUBLADO", FuncionesEval.getTipoClima(20));
+        assertEquals("CALUROSO", FuncionesEval.getTipoClima(30));
+        assertEquals("TROPICAL",FuncionesEval.getTipoClima(40));
     }
 
     @org.junit.jupiter.api.Test
