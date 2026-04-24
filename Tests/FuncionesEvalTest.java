@@ -26,9 +26,6 @@ class FuncionesEvalTest {
 
     }
 
-    @org.junit.jupiter.api.Test
-    void encontrarMayor() {
-    }
 
     @Test
     void contarApariciones() {
