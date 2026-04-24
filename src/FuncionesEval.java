@@ -1,4 +1,6 @@
-    public class FuncionesEval {
+import java.util.Scanner;
+
+public class FuncionesEval {
 
         /**
          * Método que calcula cuando un numero es un número perfecto.
@@ -53,7 +55,17 @@
          * @return Cantidad de veces que aparece el número en el array.
          */
         public static int contarApariciones(int[] numeros, int valor) {
-            return 0;
+            if(numeros==null){
+                return 0;
+            }
+
+            int contador=0;
+            for (int i = 0; i < numeros.length; i++) {
+                if(valor==numeros[i]){
+                    contador++;
+                }
+            }
+            return contador;
         }
 
 
